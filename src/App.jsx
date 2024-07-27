@@ -1,5 +1,6 @@
 import { 
-  Button
+  Button,
+  Input
  } from 'antd';
 import { useState } from 'react'
 
@@ -25,9 +26,9 @@ function handleDelete(index){
   return (
     <div>
       <h1 style={{paddingLeft:"600px", backgroundColor:"yellow",}}>Todo List</h1>
-      <form style={{paddingLeft:"570px"}} >
+      <form style={{paddingLeft:"400px" , paddingRight:"400px", display:"flex",}} >
         
-        <input style={{padding: "7px"}} type='text' value={inputValue} onChange={handleChange}/>
+        <Input type='text' value={inputValue} onChange={handleChange}></Input>
         <Button type='primary' onClick={handleSubmit}>Add</Button>
       </form>
       <ul>
